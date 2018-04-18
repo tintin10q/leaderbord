@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scoreboard</title>
+</head>
+<body>
+
+      <table border = 1, style="width:25%"}>
+          <tr>
+              <th> Plaats </th>>
+              <th> Naam </th>
+              <th> Score </th>
+          </tr>
+          <tr>
+              {% for score,namen,id in final_lijst %}
+              <td> {{ id }} </td>>
+              <td> {{ namen }} </td>
+              <td> {{ score }} </td>
+          </tr>
+          {% endfor %}
+      </table>
+</body>
+</html>
